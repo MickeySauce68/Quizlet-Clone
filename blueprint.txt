@@ -1,1 +1,16 @@
-First, we need to create 3 files for the entire gui
+1. Create 3 files for the entire gui
+
+    -> Model - file with variables (not in the program) ----- #check#
+
+    -> View - GUI window ----- #check#
+
+    -> Controller - control of window. example - typing (in the program) ------ #check#
+
+2. Create a "Make a new flashcard set" box
+    -> it will create a new database file and only create one
+       if the the file does not exist in the location specified ----- #check#
+
+
+3. Create an "Edit set" box
+    -> Edit what set -----##
+    -> page with set in edit format ----- ##
