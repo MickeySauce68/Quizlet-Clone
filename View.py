@@ -1,12 +1,15 @@
 from tkinter import *
+import Model
 
 
 
 def main():
+    Model.create_database()
     root = Tk()
     gui = Window(root)
     gui.root.mainloop()
     return None
+    
 
 
 class Window:

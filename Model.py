@@ -2,7 +2,6 @@ import os
 import sqlite3
 from sqlite3 import Error
 
-
 def create_connection(db_file):
     """ create a database connection to a SQLite database """
     conn = None
@@ -19,8 +18,8 @@ def create_connection(db_file):
             conn.close()
 
 # creates a db file in specified directory once
-directory = r"/Users/everettmiller/sqlite.db"
+def create_database():
+    directory = r"/Users/everettmiller/sqlite.db"
 
-if os.path.isfile(directory) == False:
-    if __name__ == '__main__':
+    if os.path.isfile(directory) == False:
         create_connection(directory)
