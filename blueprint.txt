@@ -9,7 +9,8 @@
 2. Create a "Make a new flashcard set" box
     -> it will create a new database file and only create one
        if the the file does not exist in the location specified ----- #check#
-    -> create table for each set in the data base -----##
+    $-> make "create_table" function for creating a new table
+       for each set in the database ----- #check#
 
 ?Do we want to create a new database for each table.?
 #No#
@@ -17,3 +18,9 @@
 3. Create an "Edit set" box
     -> Edit what set -----##
     -> page with set in edit format ----- ##
+
+
+
+----------------------------------------------------------------------------------------------------
+$ - what to do next 
+-> - task to be completed

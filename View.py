@@ -5,6 +5,7 @@ import Model
 
 def main():
     Model.create_database()
+    Model.create_table()
     root = Tk()
     gui = Window(root)
     gui.root.mainloop()
