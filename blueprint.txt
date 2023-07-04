@@ -9,9 +9,10 @@
 2. Create a "Make a new flashcard set" box
     -> it will create a new database file and only create one
        if the the file does not exist in the location specified ----- #check#
-    $-> make "create_table" function for creating a new table
+    -> make "create_table" function for creating a new table
        for each set in the database ----- #check#
-
+    $-> selecting the "Create Set" icon will create a new 
+       in the database ----- ## 
 ?Do we want to create a new database for each table.?
 #No#
 

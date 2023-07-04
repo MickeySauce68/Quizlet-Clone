@@ -23,7 +23,7 @@ def create_connection(db_file):
 # creates a db file in specified directory once
 def create_database():
     global directory
-    directory = r"/Users/everettmiller/sqlite.db"
+    directory = r"/Users/everettmiller/database.db"
 
     if os.path.isfile(directory) == False:
         create_connection(directory)
@@ -41,14 +41,14 @@ def create_table():
     :param db_file: database file
     :return: Connection object or None
     '''
-    
+    Inpt = "relish"
+    name = " "+Inpt+" "
 
-    sql_create_projects_table ="""CREATE TABLE IF NOT EXISTS projects (
+    sql_create_table = """CREATE TABLE IF NOT EXISTS"""+name+"""(
                                         id integer PRIMARY KEY,
                                         name text NOT NULL,
                                         begin_date text,
-                                        end_date text
-                                    );"""
+                                        end_date text);"""
 
 
     conn = create_connection(directory)
@@ -57,7 +57,7 @@ def create_table():
          # create projects table
         try:
             c = conn.cursor()
-            c.execute(sql_create_projects_table)
+            c.execute(sql_create_table)
         except Error as e:
             print(e)
          
