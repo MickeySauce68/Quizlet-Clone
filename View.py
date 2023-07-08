@@ -1,11 +1,13 @@
+import Inner_Workings
+import User_Interface
 from tkinter import *
-import Model
-import Controller
+from Inner_Workings import *
+from User_Interface import *
+
 
 
 def main():
-    Model.create_database()
-    Model.create_table()
+    Inner_Workings.create_database()
     root = Tk()
     gui = Window(root)
     gui.root.mainloop()
@@ -18,17 +20,14 @@ class Window:
         self.root = root
         self.root.geometry('650x490')
         self.root.title('tkinter flashcards')
-        Button(self.root,text = "Create Set",command = self.createset()).grid(row = 0, column = 1)
+        Button(self.root,text = "Create Set",command = self.createset).grid(row = 0, column = 1)
         Button(self.root, text = "Edit Set").grid(row = 0, column = 2)
 #-----------------------------------------------------
-  
+    # When the user clicks on the createtable button a window is created 
     def createset(self):
-        '''
-        creategui = Tk()
-        .geometry('560x50')
-        filecontents = self.textspace.get(0.0, END)
-        '''
-        Controller.createtable_press()
+        # Create set method will be put here
+        User_Interface.create_textbox(self)
+    
     def editset(self):
         pass
         

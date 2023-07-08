@@ -11,8 +11,10 @@
        if the the file does not exist in the location specified ----- #check#
     -> make "create_table" function for creating a new table
        for each set in the database ----- #check#
-    $-> selecting the "Create Set" icon will create a new 
-       in the database ----- ## 
+    -> selecting the "Create Set" icon will create a new 
+        table in the database ----- #check#
+        $-> after creating a new table, you will be able name the table----- ##
+
 ?Do we want to create a new database for each table.?
 #No#
 
