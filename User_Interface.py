@@ -4,13 +4,10 @@ from Inner_Workings import *
 from tkinter import *
 from View import *
 
-#$#-->create a text box for inputing the name of a set(table)
 
 
-'''
-will create text box
-will send input to "Inner_Workings.py"
-'''
+
+
 def create_textbox(self):
     # Creates window
     creategui = Tk()
