@@ -25,9 +25,9 @@ def create_connection(db_file):
     
 
 # creates a db file in specified directory once
-def create_database():
+def create_database(name):
     global directory
-    directory = r"C:\Users\rettm\Desktop\Quizlet-Clone-main (1)\Quizlet-Clone-main\sets.db"
+    directory = r"C:\\Users\\rettm\Desktop\\Quizlet-Clone-main (1)\\Quizlet-Clone-main\\"+str(name)
 
     if os.path.isfile(directory) == False:
         create_connection(directory)

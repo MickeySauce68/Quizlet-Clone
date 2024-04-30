@@ -45,3 +45,9 @@ def edit_textbox(self):
 
     # Create Button    
     Button(creategui, text = "Select", command = Inpt).grid(row = 0, column = 2)
+
+
+def name_table(self):
+    pass
+
+##################################################################################################LAST START OFF

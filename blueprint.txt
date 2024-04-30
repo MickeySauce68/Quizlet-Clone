@@ -11,7 +11,14 @@
 3. Create an "Edit set" box -----#check
 
 4. Which set???
-it will display a new set box
+- it will display a new set box
+
+- when we edit, we can add to set, so create a new textbox with add
+once you select a database.
+
+- if database is not there create error message
+
+5. create a table
 
 
 
