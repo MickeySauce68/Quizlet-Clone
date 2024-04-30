@@ -1,0 +1,22 @@
+1. Create 3 files for the entire gui
+
+    -> Model - file with variables (not in the program) ----- #check#
+
+    -> View - GUI window ----- #check#
+
+    -> Controller - control of window. example - typing (in the program) ------ #check#
+
+2. Create a "Make a new flashcard set" box -----#check#
+
+3. Create an "Edit set" box -----#check
+
+4. Which set???
+it will display a new set box
+
+
+
+
+
+
+
+
