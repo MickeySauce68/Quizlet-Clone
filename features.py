@@ -1,8 +1,8 @@
-import View 
-import Inner_Workings
-from Inner_Workings import *
+import view 
+import database
+from database import *
 from tkinter import *
-from View import *
+from view import *
 
 
 
@@ -22,7 +22,7 @@ def create_textbox(self):
 
     def Inpt():
         name=text.get()
-        Inner_Workings.create_table(name)
+        database.create_table(name)
 
     # Create Button    
     Button(creategui, text = "Create", command = Inpt).grid(row = 0, column = 2)
@@ -41,7 +41,7 @@ def edit_textbox(self):
 
     def Inpt():
         name=text.get()
-        Inner_Workings.create_table(name)
+        database.create_table(name)
 
     # Create Button    
     Button(creategui, text = "Select", command = Inpt).grid(row = 0, column = 2)

@@ -1,6 +1,6 @@
-import Inner_Workings, View, User_Interface
+import database, view, features
 
-View.main()
+view.main()
 
 
 '''

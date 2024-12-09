@@ -1,13 +1,13 @@
-import Inner_Workings
-import User_Interface
+import database
+import features
 from tkinter import *
-from Inner_Workings import *
-from User_Interface import *
+from database import *
+from features import *
  
 
 
 def main():
-    Inner_Workings.create_database()
+    database.create_database()
     root = Tk()
     gui = Window(root)
     gui.root.mainloop()
@@ -26,10 +26,10 @@ class Window:
     # When the user clicks on the createtable button a window is created 
     def createset(self):
         # Create set method will be put here
-        User_Interface.create_textbox(self)
+        features.create_textbox(self)
     
 
     def editset(self):
-        User_Interface.edit_textbox(self)
+        features.edit_textbox(self)
     
         

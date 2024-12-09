@@ -1,10 +1,12 @@
 import os
 import sqlite3
-import Inner_Workings
-import User_Interface
-from Inner_Workings import *
-from User_Interface import *
+import database
+import features
+from database import *
+from features import *
 from sqlite3 import Error
+
+name = "John"
 
 def create_connection(db_file):
     """ create a database connection to a SQLite database """
@@ -25,9 +27,9 @@ def create_connection(db_file):
     
 
 # creates a db file in specified directory once
-def create_database(name):
+def create_database():
     global directory
-    directory = r"C:\\Users\\rettm\Desktop\\Quizlet-Clone-main (1)\\Quizlet-Clone-main\\"+str(name)
+    directory = r"/Users/everettmiller/Quizlet-Clone"+str(name)
 
     if os.path.isfile(directory) == False:
         create_connection(directory)
@@ -49,7 +51,7 @@ def create_table(name):
     sql_create_table = """CREATE TABLE IF NOT EXISTS """+str(name)+""" (id term PRIMARY KEY,name text NOT NULL);"""
 
 
-    conn = Inner_Workings.create_connection(directory)
+    conn = database.create_connection(directory)
 
     if conn is not None:
         # creates table for terms
